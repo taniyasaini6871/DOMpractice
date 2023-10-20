@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+</head>
+
+<body>
+    <script>
+        function sumInput(sum) {
+            let number = parseInt(prompt("Please enter number"));
+            let arr = [];
+            arr.push(number);
+           
+            if (isNaN(number) || number === "") {
+                return sum;
+            }
+            sum += number;
+            return sumInput(sum);
+        }
+        console.log(sumInput(0));
+    </script>
+</body>
+
+</html>
